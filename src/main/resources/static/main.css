@@ -1,0 +1,138 @@
+@import 'reset.css';
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+    flex: 1;
+    background: rgb(29,134,242);
+    background: linear-gradient(90deg, rgba(29,134,242,1) 6%, rgba(29,161,242,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .text-container {
+    width: 100%;
+    text-align: left;
+}
+
+.left .text-container h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 22px 0;
+    margin-left: 65px;
+    letter-spacing: 0.2px;
+}
+
+.right {
+    width: 50%;
+    background-color: #FFFFFF;
+}
+
+.right .form-container {
+    float: left;
+    margin: 3% 0% 0% 5%;
+    width: 100%;
+}
+
+.right input[type="text"] {
+    padding: 12px;
+    margin-right: 10px;
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #E1E8ED;
+    border-radius: 4px;
+}
+
+.right input[type="text"]:focus {
+    outline-color: #1DA1F2;
+}
+
+.right input[type="password"] {
+    padding: 12px;
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #E1E8ED;
+    border-radius: 4px;
+}
+
+.right input[type="password"]:focus {
+    outline-color: #1DA1F2;
+}
+
+.right .form-container button {
+
+    padding: 10px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid #1DA1F2;
+    border-radius: 20px;
+    width: 80px;
+    color: #1DA1F2;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.right .form-container button:hover {
+    color: #FFFFFF;
+    background-color: #1DA1F2;
+}
+
+.right .join {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.right .join h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.right .join h4 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.right .join button {
+    padding: 10px 8px;
+    width: 100%;
+    background-color: #1DA1F2;
+    border: 1px solid #1DA1F2;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+

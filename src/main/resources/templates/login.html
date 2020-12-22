@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+
+<head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/custom.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="left">
+            <div class="text-container">
+
+                <h3>Follow your interests.</h3>
+                <h3>Hear what people are talking about.</h3>
+                <h3>Join the conversation.</h3>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="form-container">
+                <form th:action="@{/login}" method="post">
+                    <input type="text" id="username" name="username" th:placeholder="Username" class="form-control"  />
+                    <input type="password" th:placeholder="Password" id="password" name="password" class="form-control" />
+
+                    <button class="login" name="Submit" value="Login" type="Submit">Log in</button>
+                </form>
+            </div>
+            <div class="join">
+                <i class="fab fa-twitter"></i>
+                <h1>See what's happening in the world right now</h1>
+                <h4>Join TechTalentTwitter today.</h4>
+
+                <form th:action="@{/signup}" method="get">
+                    <button class="signup" name="Signup" value="Signup" type="Submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
